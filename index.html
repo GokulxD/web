@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Anime Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      /* Global styles */
+      body {
+        font-family: "Noto Sans JP", sans-serif;
+        background-color: #f2f2f2;
+        color: #333;
+      }
+      
+      /* Header styles */
+      header {
+        background-image: url("https://i.imgur.com/jHliMz7.jpg");
+        background-size: cover;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      header h1 {
+        font-size: 48px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 2px 2px #000;
+        margin: 0;
+      }
+      
+      /* Navigation menu styles */
+      nav {
+        background-color: #333;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+      }
+      
+      nav a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 10px;
+        position: relative;
+      }
+      
+      nav a:before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: #fff;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-out;
+      }
+      
+      nav a:hover:before {
+        transform: scaleX(1);
+      }
+      
+      /* Main content styles */
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+      }
+      
+      main::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        bottom: -20px;
+        left: -20px;
+        background-color: #333;
+        opacity: 0.2;
+        z-index: -1;
+        border-radius: 10px;
+      }
+      
+      main h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      
+      main ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      main li {
+        font-size: 24px;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+      }
+      
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 30px;
+      }
+      
+      footer p {
+        margin: 0;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Website</h1> </header><nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  <h2>About Us</h2>
+  <p>We are a company that specializes in providing top-notch services to our clients. We pride ourselves on our professionalism and attention to detail.</p>
+  <h2>Our Services</h2>
+  <ul>
+    <li>Service 1</li>
+    <li>Service 2</li>
+    <li>Service 3</li>
+  </ul>
+</main>
+
+<footer>
+  <p>Copyright &copy; 2023 My Website</p>
+</footer>
+
+</body>
+</html>
